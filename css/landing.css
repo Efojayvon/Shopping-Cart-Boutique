@@ -1,7 +1,8 @@
 :root{
     --primary-color:#333;
-    --secondary-collor:#444;
+    --secondary-color:#444;
     --overlay-color:rgba(0,0,0,0.7);
+	 --mainTransition: all 0.3s linear;
 }
 
 *{
@@ -22,7 +23,7 @@ h1,h2,h3,,h4{
 }
 
 a{
-    color: var(--secondary-collor);
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -66,6 +67,8 @@ img{
 
 .navbar .nav a {
     padding: 0 1rem;
+	transition:var(--mainTransition);
+	cursor:pointer
 }
 .navbar .nav a:hover{
     color: #666;

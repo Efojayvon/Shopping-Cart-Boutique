@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/c677a84d69.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop-page</title>
-    <link rel="stylesheet" href="main.css">
-
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c677a84d69.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/simple-lightbox.min.css">
+    <title>Boutique-Watches And Perfumes</title>
+    <link rel="stylesheet" href="css/landing.css">
+    
 </head>
 <body>
-<nav class="navbar">
-    <div class="navbar-center">
-        <span class="nav-icon">
-            <i class="fas fa-bars"></i>
-        </span>
-
-        <img src="./shopimages/amalishoplogo.jpg" alt="">
-        <div class="cart-btn">
-            <span class="nav-icon">
-                <i class="fas fa-cart-plus"></i>
-            </span>
-            <div class="cart-items">0</div>
-        </div>
+    <header>
+    <nav class="navbar">
+    <div class="container">
+        <h1 class="logo"> BOUTIQUE</h1>
+        <ul class="nav">
+            <li><a href="./marketplace.html"> Watch Shop </a></li>
+            <li><a href="./marketplace.html"> Perfume Bench </a></li>
+            <li><a href="./marketplace.html"> Sneakers Corner </a></li>   
+        </ul>
     </div>
-</nav>    
-<!--PRODUCT LISTINGS-->
-<section class="products">
-    <div class="section-title">
-        <h2>market place</h2>
-    </div>
-    <div class="products-center">
-      
-    </div>
+    </nav>
+    </header>
+    <!---Showcase--->
+<section class="section-a">
+ <div class="container">
+     <div>
+         <h1>The J-MENZ BOUTIQUE</h1>
+         <p>You are welcome to the best Men's online watch, perfume and shoes shop in Ghana. We offer you quality products at unbeatable prices all year round. Special discounts for purchases over 1000 GHS.</p>
+         <a href="./marketplace.html" class="btn">Shop Now</a>
+         
+     </div>
+     <img src="images/landingpage.jpg" alt="">    
+ </div>
 </section>
-<!--END OF PRODUCT LISTINGS-->
-    <!--CART SECTION-->
-    <div class="cart-overlay">
-        <div class="cart">
-            <span class="close-cart">
-                <i class="fas fa-window-close"></i>
-         </span>
-            <h2>your cart</h2>
-            <div class="cart-content">
-               <!--cart item-->
-             <!----   <div class="cart-item">
-                   
+   <!--Overlay Text-->
+ <section class="section-b">
+     <div class="overlay">
+         <div class="section-b-inner">
+             <h3>Quality Products From The Best Designers</h3>
+             <h2>Unbeatable Prices All Year Round </h2>
+             <p>HOUSE OF VERSACE  | PAUL SMITH  | HERMES | PRADA etc.</p>
+         </div>
+     </div>
+ </section>
 
-                    
-              
+ <!--GALLERY-->
+ <section class="section-c">
+     <div class="gallery">
+        <a href="../images/33.jpg" class="big"
+        ><img src="../images/33.jpg" alt=""
+      /></a>
+      <a href="../images/31.jpg" class="big"
+        ><img src="../images/31.jpg"" alt=""
+      /></a>
+      <a href="../images/32.jpg"" class="big"
+        ><img src="../images/32.jpg"" alt=""
+      /></a>
+      <a href="../images/38.jpg"" class="big"
+        ><img src="../images/38.jpg"" alt=""
+      /></a>
+      <a href="../images/30.jpg"" class="big">
+        <img src="../images/30.jpg"" alt=""
+      /></a>
+      <a href="../images/34.jpg"" class="big"
+        ><img src="../images/34.jpg"" alt=""
+      /></a>
+     </div>
+ </section>
 
-                 <!--cart item-->
-            </div>
-            <div class="cart-footer">
-                <h3>total: GHS <span class="cart-total">0</span>
-                </h3>
-                <button class="clear-cart banner-btn">
-                    CHECKOUT CART
-                </button>
-            </div>
-        </div>
-    </div>
-     <!--END OF CART SECTION-->
 
 
- <script src="shoppageapp.js"></script>
+    
+    
+    <script src="simple-lightbox.js"></script>
+    
+    <script>
+        $(function(){
+            const $gallery=$('.gallery a').simpleLightbox();
+        })
+    </script>
+   
 </body>
 </html>
